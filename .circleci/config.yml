@@ -6,7 +6,6 @@ workflows:
     jobs:
       - cypress/run:
           working-directory: Cypress
-          install-browsers: true
           start-command: 'npm run start'
           cypress-command: npx cypress run --browser chrome
           
