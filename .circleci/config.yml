@@ -3,9 +3,8 @@ orbs:
   cypress: cypress-io/cypress@3
 workflows:
   build:
+    working-directory: Cypress-Test
     jobs:
       - cypress/run:
-          working-directory: Cypress-Test
-          start-command: 'npm run start'
-          cypress-command: 'npx cypress run --browser chrome'
+          cypress-command: 'npx cypress run'
           
