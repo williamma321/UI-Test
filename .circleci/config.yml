@@ -5,7 +5,7 @@ workflows:
   build:
     jobs:
       - cypress/run:
-          working-directory: Cypress
+          working-directory: Cypress-Test
           start-command: 'npm run start'
           cypress-command: 'npx cypress run --browser chrome'
           
