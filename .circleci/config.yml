@@ -3,8 +3,8 @@ orbs:
   cypress: cypress-io/cypress@3
 workflows:
   build:
-    working-directory: Cypress-Test
     jobs:
+    working-directory: Cypress-Test
       - cypress/run:
           cypress-command: 'npx cypress run'
           
