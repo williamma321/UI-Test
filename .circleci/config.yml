@@ -6,4 +6,5 @@ workflows:
     jobs:
       - cypress/run:
           start-command: 'npm run start'
-          cypress-command: npx cypress run --browser chrome
+          cypress-command: 'npx cypress run --browser chrome'
+          
