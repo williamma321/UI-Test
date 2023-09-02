@@ -4,7 +4,6 @@ orbs:
 workflows:
   build:
     jobs:
-    working-directory: Cypress-Test
       - cypress/run:
+          working-directory: Cypress-Test
           cypress-command: 'npx cypress run'
-          
