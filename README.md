@@ -1,2 +1,3 @@
 # UI-Test
-Demo project for using test tool for automated GUI test
+
+Demo project for using cypress.io for automated GUI test. 
