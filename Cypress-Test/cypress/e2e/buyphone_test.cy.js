@@ -9,21 +9,15 @@ describe('Buy Phone from Google Store Test', function() {
 		
 	})		
 
-
 	
   it('Setup Google Store Shopping Cart', function() {
 	
 	// Setup the environment variables  	
-	 const wait1K = Cypress.env('Page_Shorter_Wait')
-	 const wait3K = Cypress.env('Page_Short_Wait')
-	 const wait5K = Cypress.env('Page_Med_Wait')
-	 const wait10K = Cypress.env('Page_Long_Wait')
+
 	 const testSite = Cypress.env('TestURL')
 
 	 
     cy.visit(testSite);
-	
-	cy.wait(wait1K);
 	
 	cy.get(this.ShopPageObject.SearchIconBt).click();
 
@@ -31,23 +25,13 @@ describe('Buy Phone from Google Store Test', function() {
 	 
 	cy.get(this.ShopPageObject.SearchItemEditor_Box).type(this.Shopitem.name+"{ENTER}",{force:true});
 	
-	cy.wait(wait3K);
-	
     cy.get(this.ShopPageObject.SearchItemResult_Container).click();
-	
-    cy.wait(wait3K);
 
 	cy.get(this.ShopPageObject.Buy_Now);
 	
-	cy.wait(wait1K);
-	
 	cy.get(this.ShopPageObject.Buy_Now).click();
-	
-	cy.wait(wait3K);
 
 	cy.get(this.ShopPageObject.Service_Select_Color).click();
-
-	cy.wait(wait3K);
 
 	cy.get(this.ShopPageObject.Service_Select_Model).click();
 	
@@ -55,11 +39,7 @@ describe('Buy Phone from Google Store Test', function() {
 
 	cy.get(this.ShopPageObject.Service_Skip_Protect).click();
 
-	cy.wait(wait1K);
-
 	cy.get(this.ShopPageObject.Add_ToCart).click();
-
-	cy.wait(wait3K);
 
 	cy.get(this.ShopPageObject.GoToCart).click();
 
