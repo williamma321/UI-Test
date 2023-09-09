@@ -1,6 +1,6 @@
 {
   "SearchIconBt": "[data-test=\"header-search\"] > .Ytj4ac",
-  "SearchItemEditor_Box" : "#c71",
+  "SearchItemEditor_Box" : "#c67",
   "SearchItemResult_Container" : ":nth-child(3) > [jsaction=\"click:Q0XiPd\"] > .P0LaXe > .OGN3Ee",
   "Buy_Now" : ".X4eHfd > .Nv5u7c > [data-test=\"cta\"]",
   "Service_Select_Color" : ":nth-child(1) > [data-test=\"color_selection_panel\"]",
